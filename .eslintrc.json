@@ -1,0 +1,28 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": "google",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+        "linebreak-style": 0,
+        "require-jsdoc": ["error", {
+        "require": {
+            "FunctionDeclaration": true,
+            "MethodDefinition": false,
+            "ClassDeclaration": false,
+            "ArrowFunctionExpression": false,
+            "FunctionExpression": false
+        }
+        }],
+        "quotes": ["error", "double"],
+        "max-len": ["error", { "code": 82 }],
+        "valid-jsdoc": ["error", { "requireParamType": false }]
+    },
+"comma-dangle": ["error", "never"],
+    
+}
